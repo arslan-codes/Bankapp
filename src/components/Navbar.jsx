@@ -1,7 +1,10 @@
 const Navbar = () => {
   return (
     <div className="flex justify-center ">
-      <div className="fixed bottom-10 z-50 bg-gradient-to-r from-pink-900	 bg-opacity-30 backdrop-blur-lg flex justify-center  w-1/3 rounded-full ">
+      <div
+        className="fixed bottom-10 z-50 bg-gradient-to-r m-8 from-pink-900	 bg-opacity-30
+       backdrop-blur-lg flex justify-center  w-1/3 rounded-full "
+      >
         <div className="navbar-center flex gap-4">
           <a className="btn btn-ghost text-l text-white">
             <svg
