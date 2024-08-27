@@ -1,12 +1,21 @@
+import React from "react";
+import { Link as RouterLink } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
+
 const Navbar = () => {
   return (
-    <div className="flex justify-center ">
+    <div className="flex justify-center">
       <div
-        className="fixed bottom-10 z-50 bg-gradient-to-r m-8 from-pink-900	 bg-opacity-30
-       backdrop-blur-lg flex justify-center  w-1/3 rounded-full "
+        className="fixed bottom-10 z-50 bg-gradient-to-r m-8 from-pink-900 bg-opacity-30
+       backdrop-blur-lg flex justify-center w-1/3 rounded-full"
       >
         <div className="navbar-center flex gap-4">
-          <a className="btn btn-ghost text-l text-white">
+          <RouterLink
+            to="/"
+            smooth={true}
+            duration={500}
+            className="btn btn-ghost text-l text-white cursor-pointer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -22,8 +31,11 @@ const Navbar = () => {
               />
             </svg>
             Home
-          </a>
-          <a className="btn btn-ghost text-l text-white">
+          </RouterLink>
+          <RouterLink
+            to="/getStarted"
+            className="btn btn-ghost text-l text-white"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -39,8 +51,8 @@ const Navbar = () => {
               />
             </svg>
             About
-          </a>
-          <a className="btn btn-ghost text-l text-white ">
+          </RouterLink>
+          <RouterLink to="/blog" className="btn btn-ghost text-l text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -56,8 +68,8 @@ const Navbar = () => {
               />
             </svg>
             Articles
-          </a>
-          <a className="btn btn-ghost text-l text-white ">
+          </RouterLink>
+          <RouterLink to="/contact" className="btn btn-ghost text-l text-white">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -73,7 +85,7 @@ const Navbar = () => {
               />
             </svg>
             Contact
-          </a>
+          </RouterLink>
         </div>
       </div>
     </div>

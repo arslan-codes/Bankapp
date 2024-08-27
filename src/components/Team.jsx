@@ -26,10 +26,8 @@ const Team = () => {
     },
   ];
 
-  // Rest of the component logic...
-
   return (
-    <div className="text-white py-24 sm:py-32">
+    <div className="text-white h-vh  sm:py-32">
       <div className="relative isolate px-6 ">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
